@@ -8,7 +8,7 @@
 {% block content %}
     <div class="detail-product d-flex">
         <div class="detailt-img">
-            <img src="{% if product.image %}{{ product.image.url }} {% else %}{% static 'img/noimage.jpg' %}{% endif %}" class="detail-image" alt="">
+            <img src="{% if product.img %}{{ product.img.url }} {% else %}{% static 'img/noimage.jpg' %}{% endif %}" class="detail-image" alt="">
         </div>
         <div class="detail-description" >
             <h2>{{ product.name }}</h2>
